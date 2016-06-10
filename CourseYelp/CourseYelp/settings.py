@@ -38,8 +38,15 @@ EMAIL_USE_TLS = True
 # Application definition
 
 INSTALLED_APPS = [
+    #my apps
     'Homepage',
     'webapp',
+    'SearchCourse',
+    'Rates',
+    #third party apps
+    'crispy_forms',
+    'django_admin_bootstrapped',
+    #django apps
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -136,3 +143,6 @@ STATICFILES_DIRS = (
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR,"static_in_env","media_root")
+
+
+CRISPY_TEMPLATE_PACK = 'bootstrap3'
